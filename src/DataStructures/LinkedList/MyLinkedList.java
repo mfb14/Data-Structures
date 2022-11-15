@@ -1,5 +1,5 @@
 
-package LinkedList;
+package DataStructures.LinkedList;
 
 /**
  * 

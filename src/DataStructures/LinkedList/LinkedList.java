@@ -1,5 +1,5 @@
 
-package LinkedList;
+package DataStructures.LinkedList;
 
 import java.rmi.dgc.VMID;
 
@@ -37,7 +37,6 @@ public class LinkedList {
 		head=newHead;
 	}
 	public <T> void addLast(T data) {
-		Node newNode = new Node(data, null);
 		Node current = head;
 		while(current.next!=null)
 			current=current.next;
