@@ -14,7 +14,6 @@ public class MyLinkedList {
 		LinkedList list = new LinkedList();
 		list.addFirst("Merhaba");
 		list.addFirst(45);
-		
 		list.addFirst(true);
 		list.addFirst(Math.PI);
 		list.addLast("Dünya");

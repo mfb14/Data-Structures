@@ -1,7 +1,6 @@
 
 package DataStructures.LinkedList;
 
-import java.rmi.dgc.VMID;
 
 /**
  * 
@@ -27,35 +26,35 @@ class  Node<T extends Object> {
 			System.out.print("["+data+"|"+next+"] ---->");
 	}
 }
-public class LinkedList {
+public class LinkedList <T>{
 	//[data|next] struct type of Node. Hold data and references of next data
 	private Node head;
 	
-	public <T> void addFirst(T data) {
-		Node newHead = new Node(data,null);
+	public  void addFirst(T data) {
+		Node <T>newHead = new Node(data,null);
 		newHead.next=head;
 		head=newHead;
 	}
-	public <T> void addLast(T data) {
-		Node current = head;
-		while(current.next!=null)
-			current=current.next;
-		current.next=new Node(data,null);
+	public void addLast(T data) {
+		Node <T>iter = head;
+		while(iter.next!=null)
+			iter=iter.next;
+		iter.next=new Node(data,null);
 		
 	}
 	
 	public void displayLinkedList() {
 		System.out.println("\nPrinting Linked List ...");
-		Node current = head;
+		Node<T> iter = head;
 		//Until the last element (Because last element shows null)
-		while (current != null) {
-			current.displayData();
-			current = current.next;
+		while (iter != null) {
+			iter.displayData();
+			iter = iter.next;
 		}
 	}
 	
     public void deleteFirst() {
-        Node temp = head;
+        Node<T> temp = head;
         head = head.next;
         System.out.println("\n----------------------------------------\n");
         System.out.println("The data "+temp.data+" has been deleted!");
@@ -63,13 +62,13 @@ public class LinkedList {
     }
 	
 	public void deleteLast() {
-		Node current = head;
+		Node<T> iter = head;
 		
-		while(current.next.next!=null)
-			current=current.next;
+		while(iter.next.next!=null)
+			iter=iter.next;
 		
-		Node temp = current.next;
-		current.next=null;
+		Node<T> temp = iter.next;
+		iter.next=null;
 		
         System.out.println("\n----------------------------------------\n");
         System.out.println("The data "+temp.data+" has been deleted!");
