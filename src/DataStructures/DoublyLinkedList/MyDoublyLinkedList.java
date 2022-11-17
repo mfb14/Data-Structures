@@ -13,13 +13,13 @@ public class MyDoublyLinkedList {
 		DoublyLinkedList<String> doubly = new DoublyLinkedList<String>();
 		
 		
-		doubly.addFirst("Furkan");
-		doubly.addFirst("Hello");
-		doubly.addFirst("Try");
-		doubly.addFirst("Try2");
-		doubly.addLast("What's up!");
-		doubly.addLast("How are you?");
-		doubly.deleteFirst();
+		doubly.addFirst("One");
+		doubly.addLast("Two");
+		doubly.addLast("Three");
+		doubly.addLast("Four");
+		doubly.addLast("Five");
+		doubly.addLast("Six");
+		doubly.deleteLast();
 		doubly.display();
 		
 	}

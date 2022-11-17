@@ -29,7 +29,6 @@ class  Node<T extends Object>{
 public class DoublyLinkedList<T> {
 
 	private Node head;
-	private Node tail;
 	public void addFirst(T data){
 		Node<T> newHead = new Node<T>(data);
 		
@@ -56,7 +55,18 @@ public class DoublyLinkedList<T> {
 		head=head.next;
 		head.prev=null;
 	}
+	public void deleteLast() {
+		Node iter = head;
+		while(iter.next!=null)
+			iter=iter.next;
+		
+		iter.prev.next=null;
+		
+		
 	
+		
+		
+	}
 	public void display() {
 		System.out.println("\nPrinting Linked List ...");
 		Node<T> iter = head;
