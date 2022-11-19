@@ -42,7 +42,9 @@ public class LinkedList <T>{
 		iter.next=new Node(data,null);
 		
 	}
-	
+	public void addAfter(T data,T toAdd) {
+		
+	}
 	public void displayLinkedList() {
 		System.out.println("\nPrinting Linked List ...");
 		Node<T> iter = head;
