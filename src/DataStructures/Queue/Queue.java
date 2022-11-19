@@ -20,17 +20,17 @@ class Node <E extends Object>{
 }
 public class Queue<E> {
 	private Node head;
-	private Node tail;
+	private Node rear;
 	
 	public void enqueue(E data) {
 		Node<E> newNode = new Node<E>(data);
 		if(head==null) {
 			head=newNode;
-			tail=head;
+			rear=head;
 		}
 		else {
-			tail.next=newNode;
-			tail=tail.next;
+			rear.next=newNode;
+			rear=rear.next;
 		}
 	
 	}
