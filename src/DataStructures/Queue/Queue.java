@@ -42,7 +42,6 @@ public class Queue<E> {
 		head=head.next;
 		System.out.println("The data "+temp+" has been deleted from Queue");
 	
-			
 	}
 	public void peek() {
 		System.out.println("\n"+head.data);

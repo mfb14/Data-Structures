@@ -10,10 +10,10 @@ package DataStructures.LinkedList;
  */
 
 class  Node<T extends Object> {
-	public T data;
-	public Node next;
+	protected T data;
+	protected Node next;
 	
-	public Node(T data,Node next) {
+	protected Node(T data,Node next) {
 		this.data=data;
 		this.next=next;
 	}
@@ -29,9 +29,8 @@ class  Node<T extends Object> {
 public class LinkedList <T>{
 	//[data|next] struct type of Node. Hold data and references of next data
 	private Node head;
-	
 	public  void addFirst(T data) {
-		Node <T>newHead = new Node(data,null);
+		Node <T>newHead = new Node<T>(data,null);
 		newHead.next=head;
 		head=newHead;
 	}
@@ -39,12 +38,38 @@ public class LinkedList <T>{
 		Node <T>iter = head;
 		while(iter.next!=null)
 			iter=iter.next;
-		iter.next=new Node(data,null);
+		iter.next=new Node<T>(data,null);
+	}
+
+	/**
+	 * Adding elements to linked list after specific data.
+	 * 
+	 * @param data  element to be added
+	 * @param addAfter add after this element
+	 * 
+	 * @throws RuntimeException if addAfter is equal to null
+	 * */
+	public void addAfter(T data,T addAfter) {
+		
+		if(head==null)
+			throw new RuntimeException("The Linked List is Empty!!");
+		
+		Node<T> iter = head;
+		Node<T> newNode = new Node(data, null);
+		Node<T> temp;
+		while(iter.data!=null) {
+			iter=iter.next;
+			if(iter.data==addAfter)
+				break;
+		}
+		
+		temp=iter.next;
+		newNode.next=temp;
+		iter.next=newNode;
 		
 	}
-	public void addAfter(T data,T toAdd) {
-		
-	}
+	
+	
 	public void displayLinkedList() {
 		System.out.println("\nPrinting Linked List ...");
 		Node<T> iter = head;
@@ -62,7 +87,37 @@ public class LinkedList <T>{
         System.out.println("The data "+temp.data+" has been deleted!");
         System.out.println("\n----------------------------------------\n");
     }
-	
+	/**
+	 * Search given element
+	 * */
+	private boolean search(Node head,T addAfter) {
+		Node iter = head;
+		while(iter!=null) {
+			
+			if((T)iter.data == (T)addAfter)
+				return true;
+		
+			iter=iter.next;
+		}
+		return false;
+	}
+	/**
+	 * Delete given elements from the list if It is in th list
+	 * @param data Element to be deleted
+	 * */
+	public void delete(T data) {
+		Node<T> iter = head;
+		Node<T> temp;
+		if(search(iter, data)==false)
+			System.out.println("The data "+data+" is not in list!");
+		
+		while(iter.next.data!=data) {
+			iter=iter.next;
+		}
+		temp=iter.next.next;
+		iter.next=temp;
+		
+	}
 	public void deleteLast() {
 		Node<T> iter = head;
 		
@@ -74,9 +129,7 @@ public class LinkedList <T>{
 		
         System.out.println("\n----------------------------------------\n");
         System.out.println("The data "+temp.data+" has been deleted!");
-        System.out.println("\n----------------------------------------\n");
-	
-		
+        System.out.println("\n----------------------------------------\n");		
 	}
 	
 }
