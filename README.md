@@ -40,3 +40,12 @@
 <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/stack.png" width="100%" height="100%">
 
 * Stack data structure is used in as balancing parentheses in code editor, backtracking algorithm in Deep Learning( to calculate computation has to go back in reverse order.) , in compilers, browsers (The back button in a browser saves all the URLs you have visited previously in a stack.)
+
+# Queue
+1. According to the order of arrival of the information, the list structure that is accessed first to the element that comes first is called a Queue.
+2. Queue adopts FIFO (First in First Out) behavior.
+3. In a Queue data structure, data is accessed from two ends. Adding (enqueue) elements from one end and removing (dequeueing) elements from the other end are done.
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20220816162225/Queue.png" width="100%" height="100%">
+
+* Queue is used in many areas especially in computer science.(CPU, Disk Scheduling, when we send messages to our friends and they don’t have an internet connection then these messages are queued on the server of WhatsApp.)
+
