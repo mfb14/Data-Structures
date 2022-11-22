@@ -10,7 +10,6 @@
 ![](./ds.jpg)
 
 
-
 # Linked List
 1. In java It is a dynamic collections. It's elements are keeped that linked each other. It holds two data in one area. First one is data or value, second one is reference of the the next data that come after itself.
 <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist.png" width="100%" height="100%">
@@ -48,4 +47,24 @@
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220816162225/Queue.png" width="100%" height="100%">
 
 * Queue is used in many areas especially in computer science.(CPU, Disk Scheduling, when we send messages to our friends and they don’t have an internet connection then these messages are queued on the server of WhatsApp.)
+# Tree
+1. Tree is a non-linear, hierarchical data structures. Other (Linear Data Structures such as Queue, Stack, LinkedList) data structures store data in order. Therefore time complexity increses with the data size. Today, the speed is one of the most important skills for every program. Tree gives us that. Tree allow quicker and access to data.
+2. Tree consists of a nodes and edges. 
+   ->  Node contains a key or value and pointer to its child nodes.
+   ->  It'is the link between two nodes.
+   ->  Root : Topmost node of the tree.
+   
+<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20201129092959/Recursive-Tree1.png" width="100%" height="100%">
+* Nowadays, Tree data structures used  in many fields.Such as file systems on the computer, indexing database.
+
+## Types Of Trees
+Tree types most commonly used in computer science.
+1. Binary Tree
+2. Binary Search Tree
+3. AVL Tree
+4. B-Tree
+
+
+
+
 
