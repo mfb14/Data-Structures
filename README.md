@@ -55,6 +55,7 @@
    ->  Root : Topmost node of the tree.
    
 <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20201129092959/Recursive-Tree1.png" width="100%" height="100%">
+
 * Nowadays, Tree data structures used  in many fields.Such as file systems on the computer, indexing database.
 
 ## Types Of Trees
