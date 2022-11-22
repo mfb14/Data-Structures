@@ -57,6 +57,25 @@
 <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20201129092959/Recursive-Tree1.png" width="100%" height="100%">
 
 * Nowadays, Tree data structures used  in many fields.Such as file systems on the computer, indexing database.
+## Tree Treversal
+
+* When we want to perform any operations on a tree, wee need to reach required elements. The treversal algorithm gives in visiting a required node in the tree. 
+1. Inorder Traversal -> Visit all the nodes in the left subtree, then the root node, then visit all the nodes in the right subtree
+2. Preorder Traversal -> Visit root node, then visit all the nodes in the left subtree, then visit all the nodes in the right subtree.
+3. Postorder Treversal -> Visit all the nodes in the left subtree, then visit all the nodes in the right subtree, then visit root.
+
+```Java
+			    4
+			   / \
+			  8   9
+			 / \   \
+			3   4   6
+      
+Inorder Traversal   : 3-8-7-4-9-6
+Preorder Traversal  : 4-8-3-7-9-6
+PostOrder Traversal : 3-7-8-6-9-4
+```
+
 
 ## Types Of Trees
 Tree types most commonly used in computer science.
