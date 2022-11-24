@@ -10,7 +10,7 @@
 ![](./ds.jpg)
 
 
-# Linked List
+# [Linked List](https://github.com/mfb14/Data-Structures/tree/main/src/DataStructures/LinkedList)
 1. In java It is a dynamic collections. It's elements are keeped that linked each other. It holds two data in one area. First one is data or value, second one is reference of the the next data that come after itself.
 <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist.png" width="100%" height="100%">
 2. Head is the pointer that include the reference of the first elements.
@@ -26,13 +26,13 @@
 * So, If I wanted insert or remove lots of elements in the middle of the list Linked List would be faster than Array List, However If I wanted to get elemnts from the list Array List would be faster.
 * Linked List also take up more memory than Array List. Because each elements on the Linked List hold references to the next and previous elements of the list in java collections.
 
-# Doubly Linked List
+# [Doubly Linked List](https://github.com/mfb14/Data-Structures/tree/main/src/DataStructures/DoublyLinkedList)
 1. In doubly linked list, Node has data and references to next node and previous node.You can iterate over linkedlist either in forward or backward direction as it has references to prev node and next node. 
 2. Doubly Linked List need to be sequential access. We can move forward or backward on the list.
 
 <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2014/03/DLL1.png" width="100%" height="100%">
 
-# Stack
+# [Stack](https://github.com/mfb14/Data-Structures/tree/main/src/DataStructures/Stack) 
 1. It is a linear data structure that adopts LIFO behavior. 
 2. In a stack data structure, It is not possible to access the intermediate elements. Accessing the elements of Stack is possible from top to the bottom. The elements are added and subtracted from only last element that known as top.
 
@@ -40,7 +40,7 @@
 
 * Stack data structure is used in as balancing parentheses in code editor, backtracking algorithm in Deep Learning( to calculate computation has to go back in reverse order.) , in compilers, browsers (The back button in a browser saves all the URLs you have visited previously in a stack.)
 
-# Queue
+# [Queue](https://github.com/mfb14/Data-Structures/tree/main/src/DataStructures/Queue)
 1. According to the order of arrival of the information, the list structure that is accessed first to the element that comes first is called a Queue.
 2. Queue adopts FIFO (First in First Out) behavior.
 3. In a Queue data structure, data is accessed from two ends. Adding (enqueue) elements from one end and removing (dequeueing) elements from the other end are done.
