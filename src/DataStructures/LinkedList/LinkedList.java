@@ -132,4 +132,24 @@ public class LinkedList <T>{
         System.out.println("\n----------------------------------------\n");		
 	}
 	
+	public boolean compareList(LinkedList<T> list) {
+		Node head1 = head;
+		Node head2 = list.head;
+		
+		if(head1==null && head2 == null)
+		      return false;    
+
+
+
+		    while(head1 != null && head2 != null){
+		        if(head1.data != head2.data){
+		            return false;
+
+		        }
+		        head1=head1.next;
+		        head2=head2.next;
+		    }
+		    return true;
+	}
+	
 }
