@@ -88,6 +88,12 @@ Tree types most commonly used in computer science.
 
 * Every node in the tree has at most two children, exactly one path between each node and root.
 
+### 2. [Binary Search Tree]
+
+1. BST is a tree that each node has at most two children. It can be used for search for the precense of a number in O(logn) time.
+* All nodes of left subtree are less than the root node.
+* All nodes of right subtree are more than the root node.
+* Both subtree of each node are also BST. They have the above two properties.
 
 
 
