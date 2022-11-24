@@ -1,5 +1,5 @@
 
-package DataStructures.Tree;
+package DataStructures.Tree.BinaryTree;
 
 /**
  * 
