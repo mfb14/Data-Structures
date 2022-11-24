@@ -84,6 +84,10 @@ Tree types most commonly used in computer science.
 3. AVL Tree
 4. B-Tree
 
+### 1. Binary Tree
+
+* Every node in the tree has at most two children, exactly one path between each node and root.
+
 
 
 
