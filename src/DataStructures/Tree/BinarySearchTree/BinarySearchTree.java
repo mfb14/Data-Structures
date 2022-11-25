@@ -30,29 +30,57 @@ public class BinarySearchTree{
 		root = inserter(root,key);
 	}
 	
-	public Node inserter(Node node,Integer key) {
+	public Node inserter(Node root,Integer key) {
 		
 		if(root==null) {
 			root=new Node(key);
 			return root;
-		}
-		
-		if(key<node.key) 
-			root.left=inserter(root.left,key);
-		
-		else if(key>node.key)
-			root.right=inserter(root.right,key);
 			
-		
+		}
+		if(key<=root.key) {
+			root.left=inserter(root.left,key);
+			return root;
+		}
+
+		root.right=inserter(root.right,key);	
 		return root;
-	}
-	
-	public void display() {
 		
-		root.displayData();
+	}
+	public void traverseInorder() {
+		Inorder(root);
+		System.out.println("\n");
+	}
+	public void traversePostOrder() {
+		Postorder(root);
+		System.out.println("\n");
+	}
+	public void traversePreOrder() {
+		Preorder(root);
+		System.out.println("\n");
+	}
+	private void Inorder(Node root) {
+		if (root != null) {
+			Inorder(root.left);
+		   root.displayData();
+		   Inorder(root.right);
+		  }
+	}
+	private void Postorder(Node root) {
+		if(root!=null) {
+			Postorder(root.left);
+			Postorder(root.right);
+			root.displayData();
+		}
+	}
+	private void Preorder(Node root) {
+		if(root!=null) {
+			root.displayData();
+			Preorder(root.left);
+			Preorder(root.right);
+		}
 	}
 
-			
+		
 		
 		
 	

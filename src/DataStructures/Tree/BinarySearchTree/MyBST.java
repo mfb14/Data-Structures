@@ -10,14 +10,23 @@ public class MyBST {
 
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		BinarySearchTree s = new BinarySearchTree();
-		s.insert(6);
-		s.insert(5);
-		s.insert(4);
-		s.insert(7);
+		BinarySearchTree tree = new BinarySearchTree();
+		tree.insert(15);
+		tree.insert(20);
+		tree.insert(10);
+		tree.insert(12);
+		tree.insert(8);
+		tree.insert(5);
+		tree.insert(11);
+		tree.insert(14);
+		tree.insert(16);
+		tree.insert(23);
+		tree.insert(18);
+		tree.insert(29);
 		
-		s.display();
+		tree.traverseInorder();
+		tree.traversePostOrder();
+		tree.traversePreOrder();
 	}
 
 }
