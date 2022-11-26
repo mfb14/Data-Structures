@@ -46,6 +46,36 @@ public class BinarySearchTree{
 		return root;
 		
 	}
+	public boolean search(Integer key) {
+		return searcher(root,key);
+	}
+	private boolean searcher(Node root,Integer key) {
+		if(root==null)
+			return false;
+		if(root.key==key)
+			return true;
+		if(searcher(root.left,key)==true)
+			return true;
+		if(searcher(root.right,key)==true)
+			return true;
+		
+		return false;
+			
+	}
+	public Integer getMax() {
+		Node iter = root;
+		while(iter.right!=null) {
+			iter=iter.right;
+		}
+		return iter.key;
+	}
+	public Integer getMin() {
+		while(root.left!=null)
+			root=root.left;
+		
+		return root.key;
+	}
+	
 	public void traverseInorder() {
 		Inorder(root);
 		System.out.println("\n");

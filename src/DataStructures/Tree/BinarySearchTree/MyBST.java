@@ -27,6 +27,10 @@ public class MyBST {
 		tree.traverseInorder();
 		tree.traversePostOrder();
 		tree.traversePreOrder();
+		
+		System.out.println(tree.search(8));
+		System.out.println(tree.getMax());
+		System.out.println(tree.getMin());
 	}
 
 }
