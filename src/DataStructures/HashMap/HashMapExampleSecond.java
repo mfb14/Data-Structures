@@ -30,7 +30,7 @@ public class HashMapExampleSecond {
 		
 		int newPrice = products.compute("Laptops",(k,v)-> v-v*11/100);
 		products.forEach((k,v)-> System.out.println(k+"\t:"+v));
-
+		System.out.println(newPrice);
 	}
 
 }
