@@ -1,4 +1,3 @@
-
 package DataStructures.Tree.BinarySearchTree;
 
 
@@ -62,18 +61,72 @@ public class BinarySearchTree{
 		return false;
 			
 	}
-	public Integer getMax() {
+	/**
+	 * When deleting Node in BST, there are three states.
+	 * 1. The value is in the one of the leaf nodes, we simply delete the node.
+	 * 2. If value is in the one of the middle ware nodes we equate to one of the child node to the deleted one.
+	 * 3. If Node to be deleted has two child and, child's has children like root node, we have two states
+	 * 	  3.1) We put back the highest node in the left child to the deleted node.
+	 *    3.2) We put back the lowest node in the right child to the deleted node. 
+	 * */
+	public void delete(int value) {
+		if(!search(value))
+			System.out.println("The value does not exist in the BST!");
+		
+		deleteNode(root,value);
+	}
+	private Node deleteNode(Node root,int value) {
+		if(root==null) 
+			return root;
+		
+		if(root.key>value)
+			root.left = deleteNode(root.left, value);
+		else if(root.key<value)
+			root.right = deleteNode(root.right, value);
+		else {
+			//If node to be deleted has two children
+			if(root.left!=null&&root.right!=null) {
+				Node iter = root;
+				//Find minimum value of the right subtree &&
+				//Replace current node with minimum node from right subtree
+				root.key = minValue(iter.right);
+
+				//Delete minimum node from the right subtree
+				root.right =deleteNode(root.right, root.key);
+				return root;
+			}
+			//If Node has only left child
+			if(root.left!=null&&root.right==null)
+				root=root.left;
+			//If Node has only right child
+			if(root.right!=null&&root.left==null)
+				root=root.left;
+			//If Node to be deleted has no child or is leaf node
+			else {
+				root=null;
+			}
+		}
+			return root;
+	}
+	private int minValue(Node root) {
+		while(root.left!=null)
+			root=root.left;
+		
+		return root.key;
+		
+	}
+	private int maxValue(Node root) {
 		Node iter = root;
 		while(iter.right!=null) {
 			iter=iter.right;
 		}
 		return iter.key;
 	}
-	public Integer getMin() {
-		while(root.left!=null)
-			root=root.left;
-		
-		return root.key;
+	public int getMax() {
+		return maxValue(root);
+	}
+	public int getMin() {
+		return minValue(root);
 	}
 	
 	public void traverseInorder() {

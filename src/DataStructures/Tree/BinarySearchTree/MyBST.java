@@ -25,12 +25,17 @@ public class MyBST {
 		tree.insert(29);
 		
 		tree.traverseInorder();
+		tree.delete(10);
+		
+		tree.traverseInorder();
 		tree.traversePostOrder();
 		tree.traversePreOrder();
 		
-		System.out.println(tree.search(8));
+		System.out.println(tree.search(5));
 		System.out.println(tree.getMax());
 		System.out.println(tree.getMin());
+		
+		
 	}
 
 }
