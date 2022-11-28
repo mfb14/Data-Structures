@@ -25,7 +25,11 @@
 ```
 * So, If I wanted insert or remove lots of elements in the middle of the list Linked List would be faster than Array List, However If I wanted to get elemnts from the list Array List would be faster.
 * Linked List also take up more memory than Array List. Because each elements on the Linked List hold references to the next and previous elements of the list in java collections.
-
+## Time Complexity
+* Access: `O(n)`
+* Search: `O(n)`
+* Insert: `O(1)`
+* Remove: `O(1)`
 # [Doubly Linked List](https://github.com/mfb14/Data-Structures/tree/main/src/DataStructures/DoublyLinkedList)
 1. In doubly linked list, Node has data and references to next node and previous node.You can iterate over linkedlist either in forward or backward direction as it has references to prev node and next node. 
 2. Doubly Linked List need to be sequential access. We can move forward or backward on the list.
