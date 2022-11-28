@@ -25,7 +25,7 @@
 ```
 * So, If I wanted insert or remove lots of elements in the middle of the list Linked List would be faster than Array List, However If I wanted to get elemnts from the list Array List would be faster.
 * Linked List also take up more memory than Array List. Because each elements on the Linked List hold references to the next and previous elements of the list in java collections.
-## Time Complexity
+### Linked List Time Complexity
 * Access: `O(n)`
 * Search: `O(n)`
 * Insert: `O(1)`
@@ -35,7 +35,11 @@
 2. Doubly Linked List need to be sequential access. We can move forward or backward on the list.
 
 <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2014/03/DLL1.png" width="100%" height="100%">
-
+### Doubly Linked List Time Complexity
+* Access: `O(n)`
+* Search: `O(n)`
+* Insert: `O(1)`
+* Remove: `O(1)`
 # [Stack](https://github.com/mfb14/Data-Structures/tree/main/src/DataStructures/Stack) 
 1. It is a linear data structure that adopts LIFO behavior. 
 2. In a stack data structure, It is not possible to access the intermediate elements. Accessing the elements of Stack is possible from top to the bottom. The elements are added and subtracted from only last element that known as top.
@@ -43,7 +47,11 @@
 <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/stack.png" width="100%" height="100%">
 
 * Stack data structure is used in as balancing parentheses in code editor, backtracking algorithm in Deep Learning( to calculate computation has to go back in reverse order.) , in compilers, browsers (The back button in a browser saves all the URLs you have visited previously in a stack.)
-
+### Stack Time Complexity
+* Access: `O(n)`
+* Search: `O(n)`
+* Insert: `O(1)`
+* Remove: `O(1)`
 # [Queue](https://github.com/mfb14/Data-Structures/tree/main/src/DataStructures/Queue)
 1. According to the order of arrival of the information, the list structure that is accessed first to the element that comes first is called a Queue.
 2. Queue adopts FIFO (First in First Out) behavior.
@@ -51,6 +59,13 @@
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220816162225/Queue.png" width="100%" height="100%">
 
 * Queue is used in many areas especially in computer science.(CPU, Disk Scheduling, when we send messages to our friends and they don’t have an internet connection then these messages are queued on the server of WhatsApp.)
+
+### Queue Time Complexity
+* Access: `O(n)`
+* Search: `O(n)`
+* Insert: `O(1)`
+* Remove: `O(1)`
+
 # Tree
 1. Tree is a non-linear, hierarchical data structures. Other (Linear Data Structures such as Queue, Stack, LinkedList) data structures store data in order. Therefore time complexity increses with the data size. Today, the speed is one of the most important skills for every program. Tree gives us that. Tree allow quicker and access to data.
 2. Tree consists of a nodes and edges. 
@@ -99,6 +114,12 @@ Tree types most commonly used in computer science.
 * All nodes of right subtree are more than the root node.
 * Both subtree of each node are also BST. They have the above two properties.
 
+<img src="https://miro.medium.com/max/640/1*PaKz__PhRmTp-5aVjYcyXw.gif" width="100%" height="100%">
 
+### Binary Search Tree Time Complexity
+* Access: `O(log(n))`
+* Search: `O(log(n))`
+* Insert: `O(log(n))`
+* Remove: `O(log(n))`
 
 
