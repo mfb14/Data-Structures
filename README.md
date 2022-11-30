@@ -76,7 +76,7 @@
 <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20201129092959/Recursive-Tree1.png" width="100%" height="100%">
 
 * Nowadays, Tree data structures used  in many fields.Such as file systems on the computer, indexing database.
-## Tree Treversal
+## [Tree Treversal](https://github.com/mfb14/Data-Structures/blob/main/src/DataStructures/Tree/BinaryTree/BinaryTree.java)
 
 * When we want to perform any operations on a tree, wee need to reach required elements. The treversal algorithm gives in visiting a required node in the tree. 
 1. Inorder Traversal -> Visit all the nodes in the left subtree, then the root node, then visit all the nodes in the right subtree
