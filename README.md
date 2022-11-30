@@ -122,4 +122,17 @@ Tree types most commonly used in computer science.
 * Insert: `O(log(n))`
 * Remove: `O(log(n))`
 
+### 3. [AVL Tree] 
+1. AVL is a Binary Seach Tree. In some cases, When the difference between  height of the left node of the BST and height of the right node of the BST is height. That increase BST's perfomance. AVL make BST to be balanced. Main objective is decrese the time complexity.
+2. In order to do that we need to known about Node height. If difference between left subtrees height and right one is bigger than one the tree is unbalanced. 
+3. There are two rotation method and four unbalanced cases
+#### Left-Left Case
+<img src="https://www.baeldung.com/wp-content/uploads/2020/02/ZR-Large-1024x313.png" width="100%" height="100%">
+* In this case, tree is unbalanced to the left. We need to use right rotation. 
+
+#### Right-Right Case
+<img src="https://www.baeldung.com/wp-content/uploads/2020/02/ZL-Large-1024x374.png" width="100%" height="100%">
+* In this case, tree is unbalanced to the right. We need to use left rotation. 
+* Left-Right Case
+* Right-Left Case 
 
