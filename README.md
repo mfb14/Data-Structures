@@ -133,6 +133,11 @@ Tree types most commonly used in computer science.
 #### Right-Right Case
 <img src="https://www.baeldung.com/wp-content/uploads/2020/02/ZL-Large-1024x374.png" width="100%" height="100%">
 * In this case, tree is unbalanced to the right. We need to use left rotation. 
-* Left-Right Case
-* Right-Left Case 
+#### Left-Right Case
+<img src="https://www.baeldung.com/wp-content/uploads/2020/02/YLZR-Large-1024x221.png" width="100%" height="100%">
+* We transform it into the former shape with a left rotation of Y, then we balance the tree with the right rotation of Z.
+#### Right-Left Case
+<img src="https://www.baeldung.com/wp-content/uploads/2020/02/YRZL-Large-1024x237.png" width="100%" height="100%">
+* We first rotate Y to the right, so the tree gets in the same shape as the previous case. Then we can rebalance the tree by a left rotation of Z.
+
 
