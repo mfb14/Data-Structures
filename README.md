@@ -25,13 +25,21 @@
 ```
 * So, If I wanted insert or remove lots of elements in the middle of the list Linked List would be faster than Array List, However If I wanted to get elemnts from the list Array List would be faster.
 * Linked List also take up more memory than Array List. Because each elements on the Linked List hold references to the next and previous elements of the list in java collections.
-
+### Linked List Time Complexity
+* Access: `O(n)`
+* Search: `O(n)`
+* Insert: `O(1)`
+* Remove: `O(1)`
 # [Doubly Linked List](https://github.com/mfb14/Data-Structures/tree/main/src/DataStructures/DoublyLinkedList)
 1. In doubly linked list, Node has data and references to next node and previous node.You can iterate over linkedlist either in forward or backward direction as it has references to prev node and next node. 
 2. Doubly Linked List need to be sequential access. We can move forward or backward on the list.
 
 <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2014/03/DLL1.png" width="100%" height="100%">
-
+### Doubly Linked List Time Complexity
+* Access: `O(n)`
+* Search: `O(n)`
+* Insert: `O(1)`
+* Remove: `O(1)`
 # [Stack](https://github.com/mfb14/Data-Structures/tree/main/src/DataStructures/Stack) 
 1. It is a linear data structure that adopts LIFO behavior. 
 2. In a stack data structure, It is not possible to access the intermediate elements. Accessing the elements of Stack is possible from top to the bottom. The elements are added and subtracted from only last element that known as top.
@@ -39,7 +47,11 @@
 <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/stack.png" width="100%" height="100%">
 
 * Stack data structure is used in as balancing parentheses in code editor, backtracking algorithm in Deep Learning( to calculate computation has to go back in reverse order.) , in compilers, browsers (The back button in a browser saves all the URLs you have visited previously in a stack.)
-
+### Stack Time Complexity
+* Access: `O(n)`
+* Search: `O(n)`
+* Insert: `O(1)`
+* Remove: `O(1)`
 # [Queue](https://github.com/mfb14/Data-Structures/tree/main/src/DataStructures/Queue)
 1. According to the order of arrival of the information, the list structure that is accessed first to the element that comes first is called a Queue.
 2. Queue adopts FIFO (First in First Out) behavior.
@@ -47,6 +59,13 @@
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220816162225/Queue.png" width="100%" height="100%">
 
 * Queue is used in many areas especially in computer science.(CPU, Disk Scheduling, when we send messages to our friends and they don’t have an internet connection then these messages are queued on the server of WhatsApp.)
+
+### Queue Time Complexity
+* Access: `O(n)`
+* Search: `O(n)`
+* Insert: `O(1)`
+* Remove: `O(1)`
+
 # Tree
 1. Tree is a non-linear, hierarchical data structures. Other (Linear Data Structures such as Queue, Stack, LinkedList) data structures store data in order. Therefore time complexity increses with the data size. Today, the speed is one of the most important skills for every program. Tree gives us that. Tree allow quicker and access to data.
 2. Tree consists of a nodes and edges. 
@@ -57,7 +76,7 @@
 <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20201129092959/Recursive-Tree1.png" width="100%" height="100%">
 
 * Nowadays, Tree data structures used  in many fields.Such as file systems on the computer, indexing database.
-## Tree Treversal
+## [Tree Treversal](https://github.com/mfb14/Data-Structures/blob/main/src/DataStructures/Tree/BinaryTree/BinaryTree.java)
 
 * When we want to perform any operations on a tree, wee need to reach required elements. The treversal algorithm gives in visiting a required node in the tree. 
 1. Inorder Traversal -> Visit all the nodes in the left subtree, then the root node, then visit all the nodes in the right subtree
@@ -88,13 +107,37 @@ Tree types most commonly used in computer science.
 
 * Every node in the tree has at most two children, exactly one path between each node and root.
 
-### 2. [Binary Search Tree]
+### 2. [Binary Search Tree](https://github.com/mfb14/Data-Structures/tree/main/src/DataStructures/Tree/BinarySearchTree)
 
 1. BST is a tree that each node has at most two children. It can be used for search for the precense of a number in O(logn) time.
 * All nodes of left subtree are less than the root node.
 * All nodes of right subtree are more than the root node.
 * Both subtree of each node are also BST. They have the above two properties.
 
+<img src="https://miro.medium.com/max/640/1*PaKz__PhRmTp-5aVjYcyXw.gif" width="100%" height="100%">
 
+### Binary Search Tree Time Complexity
+* Access: `O(log(n))`
+* Search: `O(log(n))`
+* Insert: `O(log(n))`
+* Remove: `O(log(n))`
+
+### 3. [AVL Tree] 
+1. AVL is a Binary Seach Tree. In some cases, When the difference between  height of the left node of the BST and height of the right node of the BST is height. That increase BST's perfomance. AVL make BST to be balanced. Main objective is decrese the time complexity.
+2. In order to do that we need to known about Node height. If difference between left subtrees height and right one is bigger than one the tree is unbalanced. 
+3. There are two rotation method and four unbalanced cases
+#### Left-Left Case
+<img src="https://www.baeldung.com/wp-content/uploads/2020/02/ZR-Large-1024x313.png" width="100%" height="100%">
+* In this case, tree is unbalanced to the left. We need to use right rotation. 
+
+#### Right-Right Case
+<img src="https://www.baeldung.com/wp-content/uploads/2020/02/ZL-Large-1024x374.png" width="100%" height="100%">
+* In this case, tree is unbalanced to the right. We need to use left rotation. 
+#### Left-Right Case
+<img src="https://www.baeldung.com/wp-content/uploads/2020/02/YLZR-Large-1024x221.png" width="100%" height="100%">
+* We transform it into the former shape with a left rotation of Y, then we balance the tree with the right rotation of Z.
+#### Right-Left Case
+<img src="https://www.baeldung.com/wp-content/uploads/2020/02/YRZL-Large-1024x237.png" width="100%" height="100%">
+* We first rotate Y to the right, so the tree gets in the same shape as the previous case. Then we can rebalance the tree by a left rotation of Z.
 
 
