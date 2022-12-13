@@ -130,7 +130,9 @@ Tree types most commonly used in computer science.
 <img src="https://www.baeldung.com/wp-content/uploads/2020/02/ZR-Large-1024x313.png" width="100%" height="100%">
 * In this case, tree is unbalanced to the left. We need to use right rotation. 
 
+
 #### Right-Right Case
+
 <img src="https://www.baeldung.com/wp-content/uploads/2020/02/ZL-Large-1024x374.png" width="100%" height="100%">
 * In this case, tree is unbalanced to the right. We need to use left rotation. 
 #### Left-Right Case
