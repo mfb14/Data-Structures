@@ -66,7 +66,7 @@ public class BinarySearchTree{
 	 * 1. The value is in the one of the leaf nodes, we simply delete the node.
 	 * 2. If value is in the one of the middle ware nodes we equate to one of the child node to the deleted one.
 	 * 3. If Node to be deleted has two child and, child's has children like root node, we have two states
-	 * 	  3.1) We put back the highest node in the left child to the deleted node.
+	 *    3.1) We put back the highest node in the left child to the deleted node.
 	 *    3.2) We put back the lowest node in the right child to the deleted node. 
 	 * */
 	public void delete(int value) {
