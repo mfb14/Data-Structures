@@ -36,6 +36,7 @@
 2. Doubly Linked List need to be sequential access. We can move forward or backward on the list.
 
 <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2014/03/DLL1.png" width="100%" height="100%">
+
 ### Doubly Linked List Time Complexity
 * Access: `O(n)`
 * Search: `O(n)`
@@ -43,7 +44,8 @@
 * Remove: `O(1)`
 
 
-# [Stack](https://github.com/mfb14/Data-Structures/tree/main/src/DataStructures/Stack) 
+# [Stack](https://github.com/mfb14/Data-Structures/tree/main/src/DataStructures/Stack)
+
 1. It is a linear data structure that adopts LIFO behavior. 
 2. In a stack data structure, It is not possible to access the intermediate elements. Accessing the elements of Stack is possible from top to the bottom. The elements are added and subtracted from only last element that known as top.
 
