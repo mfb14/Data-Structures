@@ -30,6 +30,7 @@
 * Search: `O(n)`
 * Insert: `O(1)`
 * Remove: `O(1)`
+
 # [Doubly Linked List](https://github.com/mfb14/Data-Structures/tree/main/src/DataStructures/DoublyLinkedList)
 1. In doubly linked list, Node has data and references to next node and previous node.You can iterate over linkedlist either in forward or backward direction as it has references to prev node and next node. 
 2. Doubly Linked List need to be sequential access. We can move forward or backward on the list.
@@ -40,6 +41,8 @@
 * Search: `O(n)`
 * Insert: `O(1)`
 * Remove: `O(1)`
+
+
 # [Stack](https://github.com/mfb14/Data-Structures/tree/main/src/DataStructures/Stack) 
 1. It is a linear data structure that adopts LIFO behavior. 
 2. In a stack data structure, It is not possible to access the intermediate elements. Accessing the elements of Stack is possible from top to the bottom. The elements are added and subtracted from only last element that known as top.
